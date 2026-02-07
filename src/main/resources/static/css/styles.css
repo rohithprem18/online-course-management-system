@@ -1,0 +1,101 @@
+:root {
+  --ink: #1b1f24;
+  --paper: #f6f4ef;
+  --accent: #0b6b53;
+  --accent-2: #d98d00;
+  --muted: #5b6b7a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  background: linear-gradient(180deg, #f6f4ef 0%, #f1efe9 100%);
+  color: var(--ink);
+}
+
+header {
+  background: var(--ink);
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-bottom: 18px;
+}
+
+h1, h2 {
+  font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 14px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.button.secondary {
+  background: var(--accent-2);
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccd1d9;
+  margin-top: 6px;
+}
+
+.form-row {
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border-bottom: 1px solid #e6e6e6;
+  text-align: left;
+  padding: 10px 6px;
+}
+
+.badge {
+  display: inline-block;
+  background: #e5f3ef;
+  color: #0b6b53;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.error {
+  color: #b00020;
+  font-size: 14px;
+}
